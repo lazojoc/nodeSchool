@@ -1,2 +1,2 @@
-# nodeschool
+# nodeSchool
 playing with nodeschool

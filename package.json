@@ -1,14 +1,19 @@
 {
-  "name": "nodeschool",
+  "name": "@lazojoc/nodeschool",
   "version": "1.0.0",
   "description": "Learning how to node",
   "main": "test.js",
-  "dependencies": {},
+  "dependencies": {
+    "@linclark/pkg": "^1.0.3"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Me!",
   "license": "ISC",
-  "repository": "/Documents/git/nodeSchool"
+  "repository": {
+    "type": "git",
+    "url": "/Documents/git/nodeSchool"
+  }
 }

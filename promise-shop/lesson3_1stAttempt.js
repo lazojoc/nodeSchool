@@ -6,9 +6,19 @@ var promise = new Promise(
 		const err = new Error('REJECTED!');
 		reject(err);
 	},300);
-}).then(undefined,onReject);
+});
 
 
 function onReject(error){
 	console.log(error.message);
 }
+
+promise.then(function(){
+//expected output: "REJECTED!"
+	console.log("This will only be spitted out if the promise was fulfilled");
+	}
+).catch(function(){
+	//reason => {
+		console.log('REJECTED!');}
+	//}
+);

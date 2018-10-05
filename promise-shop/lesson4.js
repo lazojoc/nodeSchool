@@ -2,13 +2,17 @@
 
 var promise = new Promise(
 	function(fulfill,reject){
-	setTimeout(function(){
-		const err = new Error('REJECTED!');
+		fulfill('I FIRED');
+
+		const err = new Error('I DID NOT FIRE');
 		reject(err);
-	},300);
-}).then(undefined,onReject);
+	}
+);
 
 
 function onReject(error){
 	console.log(error.message);
 }
+
+
+promise.then(console.log,onReject);
